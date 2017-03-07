@@ -1,18 +1,20 @@
-<h1>feeds</h1>
-{{#feeds}}
-<p>{{id}} - updated at: {{updated_time}}</p>
-{{#message}}
-<p>{{message}}</p>
-{{/message}}
-{{#story}}
-<p>{{story}}</p>
-{{/story}}
-{{/feeds}}
-<p><a href="/user/profile">Your Profile</a></p>
-<script type="text/javascript">
-if (window.location.hash == '#_=_'){
-    history.replaceState 
-        ? history.replaceState(null, null, window.location.href.split('#')[0])
-        : window.location.hash = '';
-}
-</script>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Protect Link Node.js</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1>reaction of {{id}}</h1>
+    {{#reactions}}
+    <p>{{id}} - {{name}}</p>
+    <p>{{type}}</p>
+    {{/reactions}}
+    <ul>
+      <li><a href="/user/profile">Your Profile</a></li>
+      <li><a href="/logout">Log Out</a></li>
+    </ul>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
