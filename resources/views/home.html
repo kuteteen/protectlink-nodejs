@@ -1,10 +1,18 @@
-<html>
-  <head>
-    <title>{{msg}}</title>
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <h1>{{msg}}</h1>
-    <p><a href="/user/profile">Your Profile</a></p>
-  </body>
-</html>
+<h1>feeds</h1>
+{{#feeds}}
+<p>{{id}} - updated at: {{updated_time}}</p>
+{{#message}}
+<p>{{message}}</p>
+{{/message}}
+{{#story}}
+<p>{{story}}</p>
+{{/story}}
+{{/feeds}}
+<p><a href="/user/profile">Your Profile</a></p>
+<script type="text/javascript">
+if (window.location.hash == '#_=_'){
+    history.replaceState 
+        ? history.replaceState(null, null, window.location.href.split('#')[0])
+        : window.location.hash = '';
+}
+</script>
