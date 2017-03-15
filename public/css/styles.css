@@ -1,1 +1,1 @@
-body{background-color:#eee}
+@import url("https://unpkg.com/purecss@0.6.2/build/pure-min.css");@import url("https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css");html,button,input,select,textarea,.pure-g [class*="pure-u"]{font-family:monospace;font-size:18px}.wrapper{margin:0 auto}.container{max-width:960px;margin:0 auto;padding:0 10px}.success,.error{padding:10px}.success{color:#4b9811;background:#e9fbdc}.error{color:#b71c1c;background:#f9e4e2}
