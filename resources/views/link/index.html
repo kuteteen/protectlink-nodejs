@@ -6,11 +6,27 @@
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
-    <h1>reaction of {{id}}</h1>
-    {{#reactions}}
-    <p>{{id}} - {{name}}</p>
-    <p>{{type}}</p>
-    {{/reactions}}
+    <h1>links</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>url</th>
+          <th>hash</th>
+          <th>postId</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#links}}
+        <tr>
+          <td>{{id}}</td>
+          <td>{{url}}</td>
+          <td>{{hash}}</td>
+          <td>{{postId}}</td>
+        </tr>
+        {{/links}}
+      </tbody>
+    </table>
     <ul>
       <li><a href="/link/create">Protect a Link</a></li>
       <li><a href="/logout">Log Out</a></li>
