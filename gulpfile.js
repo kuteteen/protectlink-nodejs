@@ -1,3 +1,11 @@
+/**
+ * Automatic some task.
+ *
+ * @author Nguyen Trương <me@nguyentd.me>
+ * @copyright (c) 2017 Nguyen Truong
+ * @license MIT
+ */
+
 'use strict'
 
 const gulp = require('gulp')
@@ -9,8 +17,9 @@ const uglify = require('gulp-uglify')
 
 const BS_RELOAD_DELAY = 500
 
-gulp.task('lazy-server', (callback) => {
+gulp.task('lazy-server', callback => {
   let callbackCalled = false
+
   return nodemon({
     script: 'index.js',
     env: { 'NODE_ENV': 'development' },
@@ -51,7 +60,7 @@ gulp.task('js', () => {
 })
 
 // ensures the 'js' task is complete before reloading browsers
-gulp.task('js-watch', [ 'js' ], (done) => {
+gulp.task('js-watch', [ 'js' ], done => {
   browserSync.reload()
   done()
 })

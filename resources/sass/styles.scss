@@ -2,6 +2,7 @@
 @import url('https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css');
 
 $default-font-size: 18px;
+$nav-font-color: #0078e7;
 
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
     font-family: monospace;
@@ -16,6 +17,35 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+a {
+  color: $nav-font-color;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav {
+  border-bottom: solid 1px #ddd;
+
+  p {
+    color: $nav-font-color;
+    font-weight: 700;
+  }
+}
+
+.footer {
+  color: #bbb;
+  margin-top: 36px;
+  border-top: solid 1px #ddd;
+
+  p {
+    font-size: $default-font-size * .8;
+  }
+}
+
+.control-wrapper {
+  margin: 18px 0;
 }
 
 .success, .error {
