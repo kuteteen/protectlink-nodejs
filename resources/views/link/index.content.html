@@ -1,0 +1,25 @@
+{{^hasData}}
+<p>nothing to protect, i gave them all.</p>
+{{/hasData}}
+{{#hasData}}
+<div class="control-wrapper">
+  <table class="pure-table">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>url</th>
+        <th>postId</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#links}}
+      <tr>
+        <td>{{id}}</td>
+        <td>{{url}}</td>
+        <td>{{postId}}</td>
+      </tr>
+      {{/links}}
+    </tbody>
+  </table>
+</div>
+{{/hasData}}
