@@ -9,14 +9,20 @@
         <th>id</th>
         <th>url</th>
         <th>postId</th>
+        <th>action</th>
       </tr>
     </thead>
     <tbody>
       {{#links}}
       <tr>
-        <td>{{id}}</td>
+        <td><a href="/link/{{id}}">{{id}}</a></td>
         <td>{{url}}</td>
         <td>{{postId}}</td>
+        <td>
+          <a href="/link/{{id}}/delete">delete</a>
+          |
+          <a href="/unprotect/{{unprotectId}}">public link</a>
+        </td>
       </tr>
       {{/links}}
     </tbody>

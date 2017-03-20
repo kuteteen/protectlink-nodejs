@@ -9,10 +9,6 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
     font-size: $default-font-size;
 }
 
-table {
-  table-layout: fixed;
-}
-
 .wrapper {
   margin: 0 auto;
 }
@@ -33,7 +29,6 @@ a {
   border-bottom: solid 1px #ddd;
 
   p {
-    color: $nav-font-color;
     font-weight: 700;
   }
 }
