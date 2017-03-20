@@ -1,5 +1,6 @@
 @import url('https://unpkg.com/purecss@0.6.2/build/pure-min.css');
 @import url('https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css');
+@import url('https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css');
 
 $default-font-size: 18px;
 $nav-font-color: #0078e7;
@@ -47,16 +48,18 @@ a {
   margin: 18px 0;
 }
 
-.success, .error {
-  padding: 10px;
+[class *= "button-"] {
+  color: #fff;
 }
 
-.success {
-  color: #4b9811;
-  background: #e9fbdc;
+.button-delete {
+  background: rgb(202, 60, 60);
 }
 
-.error {
-  color: #b71c1c;
-  background: #f9e4e2;
+.button-edit {
+  background: rgb(223, 117, 20);
+}
+
+.button-copy {
+  background: rgb(66, 184, 221);
 }

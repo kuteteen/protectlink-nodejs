@@ -19,9 +19,9 @@
         <td>{{url}}</td>
         <td>{{postId}}</td>
         <td>
-          <a href="/link/{{id}}/delete">delete</a>
-          |
-          <a href="/unprotect/{{unprotectId}}">public link</a>
+          <a href="/link/{{id}}/edit" class="pure-button button-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+          <a href="/link/{{id}}/delete" class="pure-button button-delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
+          <a href="/unprotect/{{unprotectId}}" class="pure-button button-copy"><i class="fa fa-clipboard" aria-hidden="true"></i></a>
         </td>
       </tr>
       {{/links}}
