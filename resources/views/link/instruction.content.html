@@ -1,11 +1,19 @@
-<div class="control-wrapper note">
+{{^err}}
+<div class="control-wrapper note-message">
   <h2>note:</h2>
   <ul>
     <li>you must include the <strong>hash</strong> below when posting a post in group, so the tool can update your group post id automatically.</li>
-    <li>you can manually update your group post id by edit this link. how to get group post id <a href="/how-to/get-group-post-id">here</a>.</li>
+    <li>you can manually update your group post id by edit this link. don't know how to get group post id? check out <a href="/how-to/get-group-post-id">here</a>.</li>
     <li>if group post id is not specified, you can only use password lock.</li>
   </ul>
 </div>
+{{/err}}
+{{#err}}
+<div class="control-wrapper error-message">
+  <h2>error:</h2>
+  <p>can't find your post in group include the <strong>hash</strong> below.</p>
+</div>
+{{/err}}
 {{#link}}
 <p>i've posted to group and include the hash,</p>
 <p><a href="/link/{{id}}/update/auto" class="pure-button pure-button-primary">update group post id automatically for me</a></p>

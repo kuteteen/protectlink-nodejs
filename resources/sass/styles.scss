@@ -64,12 +64,21 @@ a {
   background: rgb(66, 184, 221);
 }
 
-.note {
+.note-message {
   padding: 10px 18px;
   background-color: rgb(251, 249, 213);
 
   h2 {
     color: rgb(223, 117, 20);
+  }
+}
+
+.error-message {
+  padding: 10px 18px;
+  background-color: rgb(251, 249, 213);
+
+  h2 {
+    color: rgb(202, 60, 60);
   }
 }
 

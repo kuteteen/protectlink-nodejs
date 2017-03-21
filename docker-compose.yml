@@ -1,8 +1,8 @@
-version: '2'
+version: '3'
 
 services:
   protect-link:
-    image: nguyentd/pl:0.0.1
+    build: .
     env_file: .env
     ports:
       - "80:3000"
