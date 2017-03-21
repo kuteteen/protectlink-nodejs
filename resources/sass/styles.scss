@@ -63,3 +63,19 @@ a {
 .button-copy {
   background: rgb(66, 184, 221);
 }
+
+.note {
+  padding: 10px 18px;
+  background-color: rgb(251, 249, 213);
+
+  h2 {
+    color: rgb(223, 117, 20);
+  }
+}
+
+pre {
+  padding: 10px 18px;
+  background: #eee;
+  border-left: 6px solid #ccc;
+  overflow: hidden;
+}
