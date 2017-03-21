@@ -3,7 +3,7 @@
 {{/hasData}}
 {{#hasData}}
 <div class="control-wrapper">
-  <table class="pure-table">
+  <table class="pure-table pure-table-bordered">
     <thead>
       <tr>
         <th>id</th>
@@ -19,9 +19,10 @@
         <td>{{url}}</td>
         <td>{{postId}}</td>
         <td>
-          <a href="/link/{{id}}/edit" class="pure-button button-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-          <a href="/link/{{id}}/delete" class="pure-button button-delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
-          <a href="/unprotect/{{unprotectId}}" class="pure-button button-copy"><i class="fa fa-clipboard" aria-hidden="true"></i></a>
+          <a href="/link/{{id}}/instruction" class="pure-button button-secondary" title="instruction">i</a>
+          <a href="/link/{{id}}/edit" class="pure-button button-warning" title="edit">e</a>
+          <a href="/link/{{id}}/delete" class="pure-button button-danger" title="delete">d</a>
+          <a href="/unprotect/{{unprotectId}}" class="pure-button" title="copy public link">c</a>
         </td>
       </tr>
       {{/links}}

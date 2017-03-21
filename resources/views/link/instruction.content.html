@@ -1,5 +1,13 @@
+{{#done}}
+<div class="control-wrapper success-message">
+  <h2>done:</h2>
+  <p>all done! nothing to do here.</p>
+</div>
+{{/done}}
+{{#link}}
+{{^done}}
 {{^err}}
-<div class="control-wrapper note-message">
+<div class="control-wrapper warning-message">
   <h2>note:</h2>
   <ul>
     <li>you must include the <strong>hash</strong> below when posting a post in group, so the tool can update your group post id automatically.</li>
@@ -14,9 +22,9 @@
   <p>can't find your post in group include the <strong>hash</strong> below.</p>
 </div>
 {{/err}}
-{{#link}}
 <p>i've posted to group and include the hash,</p>
 <p><a href="/link/{{id}}/update/auto" class="pure-button pure-button-primary">update group post id automatically for me</a></p>
+{{/done}}
 <h2>hash</h2>
 <pre>#protect@{{id}}</pre>
 <h2>public link</h2>
