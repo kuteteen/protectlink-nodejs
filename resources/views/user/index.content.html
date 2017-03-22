@@ -1,17 +1,25 @@
-<div class="control-wrapper warning-message">
-  <h2>attention:</h2>
-  <p>you're not verify that you are a member of group. please vefify to continue using the tool.</p>
-</div>
-<div class="control-wrapper danger-message">
-  <h2>sorry:</h2>
-  <p>the tool can't verify your identification, please try again. also notice that, if you're on pending for approval, you can't get verified for now.</p>
-</div>
+{{#success}}
 <div class="control-wrapper success-message">
   <h2>success:</h2>
   <p>congratulation, you've verified that you're a member of group.</p>
 </div>
+{{/success}}
+{{^done}}
+{{#err}}
+<div class="control-wrapper danger-message">
+  <h2>sorry:</h2>
+  <p>the tool can't verify your identification, please try again. also notice that, if you're on pending for approval, you can't get verified for now.</p>
+</div>
+{{/err}}
+{{^err}}
+<div class="control-wrapper warning-message">
+  <h2>attention:</h2>
+  <p>you're not verify that you are a member of group. please vefify to continue using the tool.</p>
+</div>
+{{/err}}
 <p>i'm a member of group,</p>
 <p><a href="/profile/verify" class="pure-button pure-button-primary">vefiry me</a></p>
+{{/done}}
 {{#user}}
 <h2>id:</h2>
 <pre>{{id}}</pre>
