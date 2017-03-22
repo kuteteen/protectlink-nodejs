@@ -17,7 +17,7 @@
 </div>
 {{/err}}
 {{#err}}
-<div class="control-wrapper error-message">
+<div class="control-wrapper danger-message">
   <h2>error:</h2>
   <p>can't find your post in group include the <strong>hash</strong> below.</p>
 </div>
@@ -25,8 +25,8 @@
 <p>i've posted to group and include the hash,</p>
 <p><a href="/link/{{id}}/update/auto" class="pure-button pure-button-primary">update group post id automatically for me</a></p>
 {{/done}}
-<h2>hash</h2>
+<h2>hash:</h2>
 <pre>#protect@{{id}}</pre>
-<h2>public link</h2>
+<h2>public link:</h2>
 <pre>http://{{host}}/unprotect/{{unprotectId}}</pre>
 {{/link}}
