@@ -1,3 +1,11 @@
+{{#hasErr}}
+<div class="control-wrapper danger-message">
+  <h2>error:</h2>
+  <ul>
+    {{#err}}<li>{{.}}</li>{{/err}}
+  </ul>
+</div>
+{{/hasErr}}
 <div class="control-wrapper">
   <form action="/link" method="POST" class="pure-form">
     {{#csrfToken}}

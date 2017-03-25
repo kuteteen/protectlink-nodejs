@@ -16,8 +16,8 @@
       {{#links}}
       <tr>
         <td><a href="/link/{{id}}">{{id}}</a></td>
-        <td>{{url}}</td>
-        <td>{{postId}}</td>
+        <td><a href="{{url}}" target="_blank">{{displayUrl}}</a></td>
+        <td><a href="http://fb.com/{{postId}}" target="_blank">{{postId}}</a></td>
         <td>
           <a href="/link/{{id}}/instruction" class="pure-button button-secondary" title="instruction">i</a>
           <a href="/link/{{id}}/edit" class="pure-button button-warning" title="edit">e</a>

@@ -1,11 +1,11 @@
-{{#done}}
+{{#hasDone}}
 <div class="control-wrapper success-message">
   <h2>done:</h2>
   <p>all done! nothing to do here.</p>
 </div>
-{{/done}}
+{{/hasDone}}
 {{#link}}
-{{^done}}
+{{^hasDone}}
 {{^err}}
 <div class="control-wrapper warning-message">
   <h2>note:</h2>
@@ -19,12 +19,12 @@
 {{#err}}
 <div class="control-wrapper danger-message">
   <h2>error:</h2>
-  <p>can't find your post in group include the <strong>hash</strong> below.</p>
+  <p>can't find your post in group include the <strong>hash</strong> below. please notice that, if your post is on pending for approval, you can't update group post id for now.</p>
 </div>
 {{/err}}
 <p>i've posted to group and include the hash,</p>
 <p><a href="/link/{{id}}/update/auto" class="pure-button pure-button-primary">update group post id automatically for me</a></p>
-{{/done}}
+{{/hasDone}}
 <h2>hash:</h2>
 <pre>#protect@{{id}}</pre>
 <h2>public link:</h2>
